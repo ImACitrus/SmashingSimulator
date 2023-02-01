@@ -1,16 +1,7 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local EggModels = ReplicatedStorage.EggModels
-local EggData = require(EggModels.EggData).EggData
-
 local Throwables = ReplicatedStorage.Throwables
 local ObjectModule = require(Throwables.ObjectModule).Data
-
-for i, v in next, EggData do
-    do
-        rawset(EggData[i], "EggPrice", 0)
-    end
-end
 
 for i, v in next, ObjectModule do
     do
